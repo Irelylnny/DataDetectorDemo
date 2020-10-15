@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="text/html; charset=iso-8859-1">
+</head>
+<style>
+    body {
+        font-size: 50px;
+    }
+</style>
+<body dir="ltr">
+    <div>waiting</div>
+</body>
+<script>
+    window.onload = function() {
+        document.body.innerHTML = "<div>PhoneNumber: +86 13312131415</div><div>Email: testAccount@outlook.com</div>"
+
+        setTimeout(function(){document.body.innerHTML = "<div>PhoneNumber: +86 12345677654</div><div>Email: testAccount@account.com</div>"},4000);
+    }
+</script>
+</html>
