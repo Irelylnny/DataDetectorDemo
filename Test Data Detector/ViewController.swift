@@ -27,7 +27,6 @@ class ViewController: UIViewController {
         if let indexURL = Bundle.main.url(forResource: "dataDetector", withExtension: "html") {
             self.webView.loadFileURL(indexURL, allowingReadAccessTo: indexURL)
         }
-        webView.configuration.dataDetectorTypes = .phoneNumber
         webView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             webView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
